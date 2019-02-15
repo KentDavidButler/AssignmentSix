@@ -1,0 +1,13 @@
+﻿
+<h1>Welcome Back, Please Login</h1>
+@if (ViewBag.ErrorMessage != null)
+{
+    <h3> @ViewBag.ErrorMessage</h3>
+}
+<form action="Welcome" method="post">
+    <input name="Email" type="email" placeholder="E-Mail Address.." class="form-control" required />
+    <input name="Password" type="password" placeholder="Password.." class="form-control" required />
+    <input type="submit" />
+
+</form>
+

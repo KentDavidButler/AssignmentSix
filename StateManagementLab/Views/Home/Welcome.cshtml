@@ -1,0 +1,15 @@
+﻿@{ViewBag.Title = "UserDetails";}
+
+
+@if (ViewBag.CurrentUser != null)
+{
+
+    <h2>Welcome, @ViewBag.CurrentUser.FirstName!</h2>
+
+
+    @Html.ActionLink("Logout", "LogOut", "Home")
+}
+else
+{
+    <h2>This page is not available.</h2>
+}

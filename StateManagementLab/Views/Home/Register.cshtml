@@ -1,0 +1,19 @@
+﻿<h1>Please fill in all all fields</h1>
+@if (!String.IsNullOrEmpty(ViewBag.Message))
+{
+    <h3> @ViewBag.Message</h3>
+    <p>try again</p>
+}
+
+<form action="Welcome" method="post">
+    <input name="FirstName" placeholder="First Name.." class="form-control" required />
+    <input name="LastName" placeholder="Last Name.." class="form-control" required />
+    <input name="Email" type="email" placeholder="E-Mail Address.." class="form-control" required />
+    <input name="Age" type="number" min="18" placeholder="Age.." class="form-control" required />
+    <input name="Password" type="password" placeholder="Password.." class="form-control" required />
+    <input name="ConfirmPassword" type="password" placeholder="Confirm Password.." class="form-control" required />
+
+    <input type="submit" />
+
+</form>
+

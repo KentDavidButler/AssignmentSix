@@ -1,0 +1,14 @@
+﻿@{ViewBag.Title = "UserDetails";}
+
+@if (ViewBag.CurrentUser == null)
+{
+    <p>Welcome Stranger there are two way to get to know you: </p>
+    <p> @Html.ActionLink("Register", "Register", "Home")</p>
+    <p>@Html.ActionLink("Login", "Login", "Home")</p>
+}
+else
+{
+    @* Welcome user *@
+    <h2>Welcome, @ViewBag.CurrentUser.FirstName!</h2>
+    <p>Now that we know each other, we can get down to buisness.</p>
+}
